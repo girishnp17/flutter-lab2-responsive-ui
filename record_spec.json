@@ -1,0 +1,22 @@
+{
+  "course": "24CS2016 – Building Applications using Flutter",
+  "regno": "URK23CS5015",
+  "ex_no": "2",
+  "title": "Adaptive and Responsive UI Design",
+  "date": "",
+  "github_link": "",
+  "video_link": "",
+  "aim": "Design and implement a responsive Flutter application for an E-Commerce Product Catalog by creating reusable custom product widgets. Ensure the application adapts to different screen sizes using responsive layout techniques.",
+  "description": "Responsive design in Flutter means the same widget tree rearranges itself to make good use of whatever space is available, instead of assuming a fixed phone-sized screen. LayoutBuilder gives a widget access to the BoxConstraints handed down by its parent, so the number of columns in a grid, the padding, or even which widgets are shown can be computed from the actual available width at build time.\n\nThis experiment implements an E-Commerce Product Catalog. A Product model stores the name, category, price, star rating, an emoji icon and an accent colour for each item. A reusable ProductCard widget composes the thumbnail, name, category, rating row and a price/add-to-cart row inside a Card. The CatalogScreen wraps a GridView.builder in a LayoutBuilder and picks the crossAxisCount from the current width: 2 columns under 600px, 3 under 900px, 4 under 1200px, and 5 beyond that. A banner at the top reports the live column count and width so the responsive behaviour is visible while resizing. Running the same build at a narrow and a wide viewport proves the layout adapts without any platform-specific code.",
+  "code_files": [
+    { "path": "code/lib/models/product.dart", "label": "lib/models/product.dart" },
+    { "path": "code/lib/widgets/product_card.dart", "label": "lib/widgets/product_card.dart" },
+    { "path": "code/lib/screens/catalog_screen.dart", "label": "lib/screens/catalog_screen.dart" },
+    { "path": "code/lib/main.dart", "label": "lib/main.dart" }
+  ],
+  "screenshots": [
+    { "path": "screenshots/01_catalog_narrow.png", "caption": "Fig 1. At 380px width the responsive grid renders 2 columns." },
+    { "path": "screenshots/02_catalog_wide.png", "caption": "Fig 2. The same CatalogScreen at 1300px width automatically renders 5 columns, proving the LayoutBuilder-driven responsive behaviour." }
+  ],
+  "result": "The responsive E-Commerce Product Catalog was successfully designed and implemented using a reusable ProductCard widget and a LayoutBuilder-driven GridView. The application was verified to adapt its column count correctly across narrow and wide screen widths, as shown in the screenshots above."
+}
