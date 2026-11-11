@@ -3,7 +3,7 @@
   "regno": "URK23CS5015",
   "ex_no": "2",
   "title": "Adaptive and Responsive UI Design",
-  "date": "",
+  "date": "06/08/2026",
   "github_link": "https://github.com/girishnp17/flutter-lab2-responsive-ui",
   "video_link": "",
   "aim": "Design and implement a responsive Flutter application for an E-Commerce Product Catalog by creating reusable custom product widgets. Ensure the application adapts to different screen sizes using responsive layout techniques.",
